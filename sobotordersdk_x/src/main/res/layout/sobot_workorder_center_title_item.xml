@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/person_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:paddingTop="@dimen/sobot_list_item_padding_top"
+        android:paddingBottom="@dimen/sobot_list_item_padding_top">
+
+        <TextView
+            android:id="@+id/sobot_work_order_bigtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="fill_vertical"
+            android:paddingRight="15dp"
+            android:text="@string/sobot_order_classification_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

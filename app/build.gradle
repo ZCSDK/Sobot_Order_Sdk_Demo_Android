@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.sobot.orderdemo"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //客服工单sdk
+    implementation project(':sobotordersdk_x')
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //目前支持常见的3种图片加载库，必须在下面的图片加载库中选择一个添加依赖
+    //implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    //在使用4.9.0以上版本的glide时，需额外添加依赖，之前的版本不需要
+    implementation 'com.sobot.chat:sobotsupport-glidev4:2.1'
+
+}

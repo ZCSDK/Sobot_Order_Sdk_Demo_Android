@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_container"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_wo_second_bg_color"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/sobot_wo_bg_color" />
+
+        <TextView
+            android:id="@+id/tv_work_order_detail_info_title"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxEms="30"
+            android:maxLines="2"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_work_order_detail_info_status"
+                style="?android:attr/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dp"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#EEB04A"
+                android:lines="1"
+                android:textSize="@dimen/sobot_sp_12"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/tv_work_order_detail_info_time"
+                style="?android:attr/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_work_order_detail_info_status"
+                android:background="@null"
+                android:padding="2dp"
+                android:textColor="@color/sobot_wo_wenzi_gray3"
+                android:textSize="@dimen/sobot_sp_12"
+                tools:text="" />
+
+            <CheckBox
+                android:id="@+id/cb_detail_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:button="@null"
+                android:drawableRight="@drawable/sobot_expand_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/sobot_detail_open_string"
+                android:textColor="@drawable/sobot_txt_color_grey_blue"
+                android:textSize="@dimen/sobot_sp_12" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="15dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                style="@style/workorder_detail_text"
+                tools:text="最近更新：" />
+
+            <TextView
+                android:id="@+id/tv_ticket_level"
+                style="@style/workorder_detail_text"
+                android:layout_marginTop="16dp"
+                tools:text="优先级：" />
+
+            <TextView
+                android:id="@+id/tv_ticketTypeName"
+                style="@style/workorder_detail_text"
+                tools:text="工单分类：" />
+
+            <TextView
+                android:id="@+id/tv_dealGroupName"
+                style="@style/workorder_detail_text"
+                android:layout_marginTop="16dp"
+                tools:text="受理客服组：" />
+
+            <TextView
+                android:id="@+id/tv_dealUserName"
+                style="@style/workorder_detail_text"
+                tools:text="受理客服：" />
+
+            <TextView
+                android:id="@+id/tv_orderUserName"
+                style="@style/workorder_detail_text"
+                tools:text="对应客户：" />
+
+            <TextView
+                android:id="@+id/tv_order_concern_UserName"
+                style="@style/workorder_detail_text"
+                tools:text="关注人：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/sobot_wo_line_color" />
+        </LinearLayout>
+
+        <com.sobot.workorder.weight.SobotExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:sobotAnimAlphaStart="1"
+            app:sobotMaxCollapsedLines="10"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/sobot_wo_wenzi_gray1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/expand_collapse"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/sobot_shape_text_view_expand_bg"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/sobot_detail_expand_string"
+                    android:textColor="@color/sobot_wo_wenzi_gray2"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </com.sobot.workorder.weight.SobotExpandableTextView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_file_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_result_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/v_second_line_result_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/sobot_wo_line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/sobot_wo_wenzi_gray2"
+                android:textSize="@dimen/sobot_sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_result_list_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/v_second_line_result_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="20dp"
+                android:background="@color/sobot_wo_bg_color" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:paddingTop="17dp"
+                android:text="@string/sobot_deactivated_field_string"
+                android:textColor="@color/sobot_wo_wenzi_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/sobot_wo_line_color"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_result_list_container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" />
+
+        <View
+            android:id="@+id/v_second_divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:layout_marginTop="20dp"
+            android:background="@color/sobot_wo_bg_color" />
+
+        <TextView
+            android:id="@+id/tv_reply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:paddingTop="17dp"
+            android:text="@string/sobot_detail_order_reply_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <LinearLayout
+            android:id="@+id/v_second_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/sobot_wo_line_color" />
+        </LinearLayout>
+
+        <com.sobot.workorder.weight.SobotListViewForScrollView
+            android:id="@+id/lllv_reply_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_reply_empty"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:text="@string/sobot_detail_no_reply_string"
+            android:textColor="@color/sobot_wo_wenzi_gray2"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</ScrollView>

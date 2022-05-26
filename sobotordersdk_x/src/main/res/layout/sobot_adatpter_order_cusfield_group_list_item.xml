@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_customer_field_group_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_second_bg_color">
+
+    <RelativeLayout
+        android:id="@+id/work_order_customer_field_group_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/sobot_wo_second_bg_color">
+
+        <TextView
+            android:id="@+id/work_order_customer_field_group_text_lable"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/work_order_customer_field_group_text_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/work_order_customer_field_group_img"
+            android:layout_toRightOf="@+id/work_order_customer_field_group_text_lable"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray2"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/work_order_customer_field_group_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/work_order_customer_field_group_img"
+            android:layout_toRightOf="@+id/work_order_customer_field_group_text_lable"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray2"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/work_order_customer_field_group_edittext_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/work_order_customer_field_group_img"
+            android:layout_toRightOf="@+id/work_order_customer_field_group_text_lable"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray2"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/work_order_customer_field_group_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sobot_icon_wo_arrow_icon"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/work_order_customer_field_group_rl_delete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/work_order_customer_field_group_rl_top"
+        android:background="@color/sobot_wo_second_bg_color">
+
+        <View
+            android:id="@+id/work_order_customer_field_group_line_delete"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/sobot_wo_line_color" /><!--@color/line_1dp-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_order_customer_field_group_line_delete"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/sobot_wo_second_bg_color">
+
+            <TextView
+                android:id="@+id/work_order_customer_field_group_tv_delete"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/sobot_textview_delete_border"
+                android:gravity="center"
+                android:text="@string/sobot_delete_string"
+                android:textColor="@color/sobot_wo_wenzi_gray1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SobotWOclassificationFragment">
+
+    <!--下拉刷新-->
+    <com.sobot.widget.refresh.layout.SobotRefreshLayout
+        android:id="@+id/sobot_srl_workorder_classification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sobot_wo_bg_color">
+        <!--显示空或请求失败-->
+        <com.sobot.widget.loading.SobotLoadingLayout
+            android:id="@+id/sobot_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:llEmptyImage="@drawable/sobot_icon_search_order_data_empty">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sobot_rv_workorder_classification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sobot_wo_transparent"
+                android:overScrollMode="never"
+                android:paddingTop="1dp" />
+
+        </com.sobot.widget.loading.SobotLoadingLayout>
+    </com.sobot.widget.refresh.layout.SobotRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sobot="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_wo_bg_color"
+    android:orientation="vertical">
+    <include layout="@layout/sobot_common_layout_titlebar" />
+
+    <com.sobot.workorder.weight.SobotSettingItemView
+        android:id="@+id/siv_work_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        sobot:display_type="1"
+        sobot:hintColor="@color/sobot_wo_wenzi_gray2"
+        sobot:isShowBottomLine="true"
+        sobot:isShowArrow="true"
+        sobot:left_text="@string/sobot_work_order_status_string"
+        sobot:left_text_color="@color/sobot_wo_wenzi_gray3"
+        sobot:left_text_width="100dp"
+        sobot:mid_text=""
+        sobot:value="0string/sobot_wo_item_state_not_start_string" />
+
+    <com.sobot.workorder.weight.SobotSettingItemView
+        android:id="@+id/siv_work_order_priority"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        sobot:display_type="1"
+        sobot:isShowBottomLine="true"
+        sobot:left_text="@string/sobot_priority_second_string"
+        sobot:isShowArrow="true"
+        sobot:left_text_color="@color/sobot_wo_wenzi_gray3"
+        sobot:left_text_width="100dp"
+        sobot:mid_text="@string/sobot_low_string"
+        sobot:value="0" />
+
+    <com.sobot.workorder.weight.SobotSettingItemView
+        android:id="@+id/siv_work_order_customer_service_group"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        sobot:default_str="@string/sobot_select_service_group_string"
+        sobot:display_type="1"
+        sobot:hintColor="@color/sobot_wo_wenzi_gray2"
+        sobot:isShowArrow="true"
+        sobot:isShowBottomLine="true"
+        sobot:left_text="@string/sobot_customer_service_team_string"
+        sobot:left_text_color="@color/sobot_wo_wenzi_gray3"
+        sobot:left_text_width="100dp"
+        sobot:mid_text="@string/sobot_select_service_group_string" />
+
+    <com.sobot.workorder.weight.SobotSettingItemView
+        android:id="@+id/siv_work_order_customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        sobot:default_str="@string/sobot_choose_customer_service_string"
+        sobot:display_type="1"
+        sobot:hintColor="@color/sobot_wo_wenzi_gray2"
+        sobot:isShowArrow="true"
+        sobot:isShowBottomLine="false"
+        sobot:left_text="@string/sobot_accept_customer_service_string"
+        sobot:left_text_color="@color/sobot_wo_wenzi_gray3"
+        sobot:left_text_width="100dp"
+        sobot:mid_text="@string/sobot_choose_customer_service_string" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/sobot_wo_bg_color" />
+
+    <EditText
+        android:id="@+id/et_work_order_reply_describe"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="@color/sobot_wo_wenzi_white_to_gray1"
+        android:gravity="start"
+        android:hint="@string/sobot_detail_activation_hide_string"
+        android:maxEms="1000"
+        android:minHeight="90dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:textColorHint="@color/sobot_wo_wenzi_gray2"
+        android:textColor="@color/sobot_wo_wenzi_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+
+</LinearLayout>

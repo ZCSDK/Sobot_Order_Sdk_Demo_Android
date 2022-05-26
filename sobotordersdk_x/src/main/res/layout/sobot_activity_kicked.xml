@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_real_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sobot_bg_dialog_rectangle"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_hint_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="@string/sobot_str_kicked_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/sobot_wo_line_color" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:minWidth="64dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/sobot_exit_string"
+                android:textColor="@color/sobot_wo_theme_color"
+                android:textSize="@dimen/sobot_sp_16"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="0.1dp"
+                android:layout_height="50dp"
+                android:background="@color/sobot_wo_line_color"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:minWidth="64dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/sobot_re_login_string"
+                android:textColor="@color/sobot_wo_theme_color"
+                android:textSize="@dimen/sobot_sp_16"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

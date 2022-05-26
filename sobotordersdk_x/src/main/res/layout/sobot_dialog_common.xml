@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/sobot_bg_dialog_rectangle"
+    android:orientation="vertical">
+
+    <!-- 为了把dialog撑开 -->
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="@string/sobot_tips_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sobot_wo_wenzi_gray2"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/sobot_cancle_string"
+            android:textColor="@color/sobot_wo_wenzi_gray2"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="0.1dp"
+            android:layout_height="60dp"
+            android:background="@color/sobot_wo_line_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/sobot_ok_string"
+            android:textColor="@color/sobot_wo_theme_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

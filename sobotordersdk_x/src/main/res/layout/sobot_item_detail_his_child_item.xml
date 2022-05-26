@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_bg_color"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tv_summary_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_val1"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <TextView
+            android:id="@+id/tv_summary1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <RelativeLayout
+            android:id="@+id/tv_summary_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_summary2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/sobot_wo_wenzi_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

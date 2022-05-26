@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_setting_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_transparent">
+
+    <TextView
+        android:id="@+id/tv_setting_item_left_text"
+        style="?android:attr/textViewStyle"
+        android:layout_width="@dimen/sobot_settingItemView_left_text_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/sobot_settingItemView_left_text_margin_right"
+        android:background="@null"
+        android:paddingTop="@dimen/sobot_list_item_padding_top"
+        android:paddingBottom="@dimen/sobot_list_item_padding_top"
+        android:textColor="@color/sobot_wo_wenzi_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_setting_item_mid_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/tv_setting_item_img"
+        android:layout_toRightOf="@+id/tv_setting_item_left_text"
+        android:textColor="@color/sobot_wo_wenzi_gray2"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <ImageView
+        android:id="@+id/tv_setting_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sobot_icon_wo_arrow_icon"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/tv_setting_item_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/tv_setting_item_left_text"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sobot_wo_line_color" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sobot="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_wo_bg_color">
+
+        <TextView
+            android:id="@+id/tv_left_text"
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:paddingTop="@dimen/sobot_list_item_padding_top"
+            android:paddingBottom="@dimen/sobot_list_item_padding_top"
+            android:text="@string/sobot_cancle_string"
+            android:textColor="@color/sobot_wo_wenzi_gray2"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:paddingTop="@dimen/sobot_list_item_padding_top"
+            android:paddingBottom="@dimen/sobot_list_item_padding_top"
+            android:text="@string/sobot_ok_string"
+            android:textColor="@color/sobot_wo_theme_color"
+            android:textSize="@dimen/sobot_sp_14" />
+    </RelativeLayout>
+
+    <!--    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/sobot_line_color" />-->
+
+    <com.sobot.workorder.weight.wheelpicker.SobotWheelPicker
+        android:id="@+id/main_wheel_curved"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_weight="1"
+        android:background="@color/sobot_wo_second_bg_color"
+        sobot:wheel_atmospheric="true"
+        sobot:wheel_curved="true"
+        sobot:wheel_item_space="35dp"
+        sobot:wheel_item_text_color="@color/sobot_wo_wenzi_gray2"
+        sobot:wheel_item_text_size="17sp"
+        sobot:wheel_selected_item_position="0"
+        sobot:wheel_selected_item_text_color="@color/sobot_wo_wenzi_gray1" />
+
+</LinearLayout>

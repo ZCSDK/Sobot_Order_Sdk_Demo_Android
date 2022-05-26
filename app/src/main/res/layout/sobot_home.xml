@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/sobot_common_layout_titlebar" />
+
+    <FrameLayout
+        android:id="@+id/order_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/setting_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/order_menu"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="工单"
+            android:textColor="@color/sobot_common_gray1" />
+
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/setting_menu_nor"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="设置"
+            android:textColor="@color/sobot_common_gray1" />
+    </LinearLayout>
+
+</LinearLayout>

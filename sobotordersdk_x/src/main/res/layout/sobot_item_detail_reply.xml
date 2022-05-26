@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.sobot.workorder.weight.image.SobotImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:sobot_iv_isCircle="true"
+            app:sobot_iv_cornerRadius="45dp"
+            android:src="@drawable/sobot_icon_avatar_weibo_online"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/sobot_wo_wenzi_gray2"
+                android:textSize="@dimen/sobot_sp_14"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:textColor="@color/sobot_wo_wenzi_gray1"
+                android:textSize="@dimen/sobot_sp_14"
+                tools:text="" />
+            <!-- file1 -->
+            <LinearLayout
+                android:id="@+id/ll_file_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/sobot_wo_wenzi_gray2"
+                    android:textSize="@dimen/sobot_sp_12"
+                    tools:text="2016-04-15" />
+
+                <TextView
+                    android:id="@+id/tv_display_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_create_time"
+                    android:drawableLeft="@drawable/sobot_small_divider"
+                    android:drawablePadding="7dp"
+                    android:text=""
+                    android:textColor="#E59208"
+                    android:textSize="@dimen/sobot_sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/sobot_icon_delete"
+                    android:drawablePadding="5dp"
+                    android:text="@string/sobot_delete_string"
+                    android:textColor="@color/sobot_wo_wenzi_gray1"
+                    android:textSize="@dimen/sobot_sp_12"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="15dp"
+        android:background="@color/line1_1dp" />-->
+</LinearLayout>

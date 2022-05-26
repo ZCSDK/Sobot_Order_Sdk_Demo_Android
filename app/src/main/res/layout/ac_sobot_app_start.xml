@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SobotStartActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="使用工单组件前请先登录\n用户名/密码 或 用户名/token可输入任意一组"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="域名，不填默认https://api.sobot.com"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang"
+        android:hint="请输入域名"
+        android:padding="8dp"
+        android:inputType="textUri"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="工单账号（必填）"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang"
+        android:hint="请输入工单账号"
+        android:padding="8dp"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="账号密码（非必填，如果有token可以不填）"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang"
+        android:hint="请输入密码"
+        android:padding="8dp"
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="账号token（非必填，如果有密码可以不填）"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang"
+        android:hint="请输入token"
+        android:padding="8dp"
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/sobot_common_gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ac_demo_start_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/sobot_wo_bg_color"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="启动工单sdk"
+        android:textColor="@color/sobot_wo_blue_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

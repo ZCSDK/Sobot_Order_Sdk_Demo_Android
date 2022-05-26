@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+    <TextView
+        android:id="@+id/sobot_tv_copy_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:background="@drawable/sobot_wo_pop_long_copy"
+        android:text="@string/sobot_copy_string"
+        android:textColor="@color/sobot_wo_wenzi_white"
+        android:textSize="12sp" />
+
+</LinearLayout>

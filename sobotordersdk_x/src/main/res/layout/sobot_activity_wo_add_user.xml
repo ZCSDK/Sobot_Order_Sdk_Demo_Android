@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_user_search_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_wo_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/sobot_common_layout_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_wo_second_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobot_nickname_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <EditText
+            android:id="@+id/et_user_nike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/sobot_nickname_hide_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray3"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_delete_user_name"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/sobot_icon_ed_delete_normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.10dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_wo_second_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobot_email_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <EditText
+            android:id="@+id/et_user_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/sobot_please_input_email_str"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray3"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_delete_user_email"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/sobot_icon_ed_delete_normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.10dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_wo_second_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobot_phone_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <EditText
+            android:id="@+id/et_user_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/sobot_please_input_phone_string"
+            android:inputType="number"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_wenzi_gray3"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_delete_user_phone"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/sobot_icon_ed_delete_normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/sobot_bg_theme_color_2dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="@string/sobot_confirm_add_string"
+        android:textColor="@color/sobot_wo_wenzi_white_to_gray1"
+        android:textSize="@dimen/sobot_sp_16" />
+</LinearLayout>

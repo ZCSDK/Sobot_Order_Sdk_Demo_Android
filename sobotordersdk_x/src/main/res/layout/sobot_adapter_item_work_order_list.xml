@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_setting_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@color/sobot_wo_transparent">
+
+    <ImageView
+        android:id="@+id/iv_work_order_list_left_img"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/sobot_icon_not_selected_service_group"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_setting_item_left_text"
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/iv_work_order_list_right_img"
+        android:layout_toRightOf="@+id/iv_work_order_list_left_img"
+        android:background="@null"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="@dimen/sobot_setting_item_padding_top"
+        android:paddingBottom="@dimen/sobot_setting_item_padding_top"
+        android:textColor="@color/sobot_wo_wenzi_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <ImageView
+        android:id="@+id/iv_work_order_list_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sobot_icon_wo_selected"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/v_dividerline"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <View
+        android:id="@+id/v_dividerline_full"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sobot_wo_line_color"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

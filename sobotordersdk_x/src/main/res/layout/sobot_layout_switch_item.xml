@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_transparent">
+
+    <TextView
+        android:id="@+id/tv_leftTextView"
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:paddingTop="@dimen/sobot_list_item_padding_top"
+        android:paddingBottom="@dimen/sobot_list_item_padding_top"
+        android:textColor="@color/sobot_wo_wenzi_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <!-- <ImageView
+         android:id="@+id/tv_right_view"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="20dp"
+         android:background="@drawable/selected_mark"
+         android:contentDescription="@null"/>-->
+
+    <com.sobot.workorder.weight.SobotSwitchButton
+        android:id="@+id/sb_ios"
+        style="@style/SobotSwitchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

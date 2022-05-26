@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_wo_bg_color"
+    android:orientation="vertical">
+    <!--title-->
+    <include layout="@layout/sobot_common_layout_titlebar" />
+
+
+    <!--下拉刷新-->
+    <com.sobot.widget.refresh.layout.SobotRefreshLayout
+        android:id="@+id/sobot_srl_workorder_second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/sobot_wo_bg_color">
+
+        <com.sobot.widget.loading.SobotLoadingLayout
+            android:id="@+id/sobot_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:llEmptyImage="@drawable/sobot_icon_search_order_data_empty">
+            <!--列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sobot_rv_workorder_second_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sobot_wo_transparent"
+                android:overScrollMode="never" />
+        </com.sobot.widget.loading.SobotLoadingLayout>
+    </com.sobot.widget.refresh.layout.SobotRefreshLayout>
+
+</LinearLayout>
