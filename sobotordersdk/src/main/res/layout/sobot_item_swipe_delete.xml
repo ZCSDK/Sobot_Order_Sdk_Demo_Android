@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sobot.workorder.weight.swipeItem.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sil_swipeitem_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_second_bg_color"
+    app:sil_bottomMode="layDown"
+    app:sil_springDistance="20dp"
+    app:sil_swipeDirection="left">
+
+    <TextView
+        android:id="@+id/tv_delete_text"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="@string/sobot_delete_string"
+        android:textColor="@color/sobot_wo_wenzi_white_to_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edittext_add_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=""
+            style="@style/ServiceSummaryEdit" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:src="@drawable/sobot_del_img" />
+
+    </LinearLayout>
+
+</com.sobot.workorder.weight.swipeItem.SwipeItemLayout>

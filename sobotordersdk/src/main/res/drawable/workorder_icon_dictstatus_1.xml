@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 填充 -->
+    <solid android:color="#1AEEB04A" />
+
+    <!-- stroke 描边 -->
+    <stroke
+        android:width="1dip"
+        android:color="#F7D8A5" />
+</shape>

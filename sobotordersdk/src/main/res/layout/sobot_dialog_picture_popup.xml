@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sobot_wo_second_bg_color"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_call_up_task_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_wo_item_setting_selector"
+            android:text="@string/sobot_attach_take_pic_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <View
+            android:id="@+id/btn_call_up_task_tel_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/sobot_wo_line_color" />
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_wo_item_setting_selector"
+            android:text="@string/sobot_attach_take_pic_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/sobot_wo_line_color" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_wo_item_setting_selector"
+            android:text="@string/sobot_choice_form_picture_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:background="@color/sobot_wo_third_bg_color" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_wo_item_setting_selector"
+            android:text="@string/sobot_cancle_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

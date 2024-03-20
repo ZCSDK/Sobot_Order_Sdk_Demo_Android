@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:orientation="vertical">
+
+    <!--   文本类型   -->
+    <RelativeLayout
+        android:id="@+id/call_customer_field_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/call_customer_field_text_lable"
+            style="@style/ServiceSummaryView"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:textColor="@color/sobot_wo_new_wenzi_gray2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/call_customer_field_text_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/call_customer_field_text_img"
+            android:layout_toRightOf="@+id/call_customer_field_text_lable"
+            android:background="@null"
+            android:textColor="@color/sobot_wo_new_wenzi_gray1"
+            android:textColorHint="@color/sobot_wo_new_wenzi_gray2"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/call_customer_field_text_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sobot_item_arrow"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/iv_field_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sobot_icon_copy"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

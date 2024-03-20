@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="14dp">
+
+    <CheckBox
+        android:id="@+id/cb_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:button="@drawable/sobot_btn_checkbtn_dan_bg"
+        />
+
+    <TextView
+        android:id="@+id/tv_call_custom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cb_customer"
+        android:paddingBottom="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/sobot_wo_new_wenzi_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_call_custom_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_call_custom_name"
+        android:layout_toRightOf="@id/cb_customer"
+        android:paddingTop="3dp"
+        android:text="18688888888"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/sobot_wo_new_wenzi_gray3"
+        android:textSize="@dimen/sobot_sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_customer_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/sobot_item_arrow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_call_custom_phone"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/cb_customer"
+        android:background="@color/sobot_wo_line_new" />
+</RelativeLayout>

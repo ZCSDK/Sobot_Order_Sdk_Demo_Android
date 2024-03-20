@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 34
+
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 34
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
+    compileOnly 'com.squareup.okhttp3:okhttp:4.4.0'
+    api 'com.sobot.library:sobotcommon_x:1.6.6'
+    api 'com.sobot.library:widget_x:1.2.1'
+    api 'com.sobot.library:album:1.0.1'
+}

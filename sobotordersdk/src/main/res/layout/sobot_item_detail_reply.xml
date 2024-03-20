@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.sobot.workorder.weight.image.SobotImageView
+            android:id="@+id/iv_head"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_icon_avatar_weibo_online"
+            app:sobot_iv_cornerRadius="45dp"
+            app:sobot_iv_isCircle="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/sobot_wo_new_wenzi_gray1"
+                    android:textSize="@dimen/sobot_sp_13"
+                    android:textStyle="bold"
+                    tools:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sobot_icon_wo_more" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_relay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/sobot_detail_order_reply_string"
+                android:textColor="@color/sobot_wo_new_wenzi_gray2"
+                android:textSize="@dimen/sobot_sp_11"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingBottom="12dp"
+                android:textColor="@color/sobot_wo_wenzi_gray1"
+                android:textSize="@dimen/sobot_sp_13"
+                tools:text="" />
+            <!--录音-->
+            <LinearLayout
+                android:id="@+id/ll_voice_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sobot_draw_call_arrange_ractangle_gray_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_voice_play"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/call_icon_play" />
+
+                <ImageView
+                    android:id="@+id/iv_voice_pause"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/call_icon_pause"
+                    android:visibility="gone" />
+
+                <SeekBar
+                    android:id="@+id/sb_voice_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:progressDrawable="@drawable/sobot_draw_call_sb_bar"
+                    android:thumb="@drawable/call_icon_oval"></SeekBar>
+
+                <TextView
+                    android:id="@+id/tv_voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/sobot_wo_new_wenzi_gray2"
+                    android:textSize="@dimen/sobot_sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_voice_play_frequency"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sobot_draw_call_ractangle_gray2_bg"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="x 1.0"
+                    android:textColor="@color/sobot_wo_new_wenzi_gray3"
+                    android:textSize="@dimen/sobot_sp_10" />
+            </LinearLayout>
+            <!-- file1 -->
+            <LinearLayout
+                android:id="@+id/ll_file_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sobot_str_call_id"
+                android:textColor="@color/sobot_wo_wenzi_gray2"
+                android:textSize="@dimen/sobot_sp_13"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_call_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_call_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/sobot_wo_wenzi_gray1"
+                    android:textSize="@dimen/sobot_sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_call_id_copy"
+                    android:layout_width="25dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="12dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="2dp"
+                    android:src="@drawable/sobot_icon_copy_id" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sobot_wo_wenzi_gray3"
+                android:textSize="@dimen/sobot_sp_11"
+                tools:text="2016-04-15" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="15dp"
+        android:background="@color/sobot_wo_line_color" />
+</LinearLayout>

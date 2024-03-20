@@ -1,1 +1,1 @@
-include ':app', ':sobotordersdk_x'
+include ':app', ':sobotordersdk'

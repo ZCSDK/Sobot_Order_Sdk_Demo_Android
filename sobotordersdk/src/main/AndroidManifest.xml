@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sobot.workorder">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To handle the reselection within the app on Android 14 (API level 34) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <application>
+        <activity android:name=".activity.SobotWOClassificationActivity" />
+        <activity android:name=".activity.SobotActivateWOActivity" />
+        <activity android:name=".activity.SobotWOSearchActivity" />
+        <activity android:name=".activity.SobotWODetailActivity" />
+        <activity
+            android:name=".activity.SobotWOTicketListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOCreateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOCategoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotGroupFieldActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotCategorySmallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOCascadeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOUserSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWOAddUserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SobotKickedActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/SobotAppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name=".weight.dialog.SobotCloseWoFieldsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/SobotAppThemeDialogIsTranslucent" />
+
+        <provider
+            android:name=".provider.SobotFileProvider"
+            android:authorities="${applicationId}.sobot_fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sobot_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

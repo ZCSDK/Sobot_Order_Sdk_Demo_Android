@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">智齿工单_SDK</string>
+    <string name="workorder">工单</string>
+    <string name="Setting">设置</string>
 </resources>

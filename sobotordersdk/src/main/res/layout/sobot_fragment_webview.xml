@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_wo_wenzi_gray2"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/sobot_wo_bg_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/sobot_loadProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:max="100"
+            android:paddingStart="1dip"
+            android:paddingLeft="1dip"
+            android:paddingEnd="1dip"
+            android:paddingRight="1dip"
+            android:progress="0" />
+
+        <com.sobot.workorder.weight.SobotWebview
+            android:id="@+id/sobot_mWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </LinearLayout>
+    <include
+        android:id="@+id/sobot_rl_net_error"
+        layout="@layout/sobot_layout_net_error" />
+
+</LinearLayout>

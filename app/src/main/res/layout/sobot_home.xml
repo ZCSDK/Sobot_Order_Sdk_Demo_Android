@@ -38,7 +38,7 @@
             android:drawablePadding="4dp"
             android:gravity="center"
             android:paddingTop="6dp"
-            android:text="工单"
+            android:text="@string/workorder"
             android:textColor="@color/sobot_common_gray1" />
 
 
@@ -51,7 +51,7 @@
             android:drawablePadding="4dp"
             android:gravity="center"
             android:paddingTop="6dp"
-            android:text="设置"
+            android:text="@string/Setting"
             android:textColor="@color/sobot_common_gray1" />
     </LinearLayout>
 

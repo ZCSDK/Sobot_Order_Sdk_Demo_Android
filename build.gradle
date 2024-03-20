@@ -2,8 +2,9 @@
 
 buildscript {
     repositories {
-        google()
+        mavenCentral()
         jcenter()
+        google()
 
     }
     dependencies {
@@ -16,9 +17,9 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+        mavenCentral()
         jcenter()
-        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
+        google()
     }
 }
 

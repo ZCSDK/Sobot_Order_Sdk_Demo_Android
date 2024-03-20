@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="域名，不填默认https://api.sobot.com"
+        android:text="域名，不填默认https://api-c.sobot.com"
         android:textColor="@color/sobot_common_gray1"
         android:textSize="16sp" />
 
@@ -30,8 +30,8 @@
         android:layout_margin="10dp"
         android:background="@drawable/biankuang"
         android:hint="请输入域名"
-        android:padding="8dp"
         android:inputType="textUri"
+        android:padding="8dp"
         android:textColor="@color/sobot_common_gray1"
         android:textSize="16sp" />
 
@@ -50,6 +50,7 @@
         android:layout_margin="10dp"
         android:background="@drawable/biankuang"
         android:hint="请输入工单账号"
+        android:inputType="textEmailAddress"
         android:padding="8dp"
         android:textColor="@color/sobot_common_gray1"
         android:textSize="16sp" />
@@ -69,8 +70,8 @@
         android:layout_margin="10dp"
         android:background="@drawable/biankuang"
         android:hint="请输入密码"
-        android:padding="8dp"
         android:inputType="textVisiblePassword"
+        android:padding="8dp"
         android:textColor="@color/sobot_common_gray1"
         android:textSize="16sp" />
 
@@ -89,8 +90,8 @@
         android:layout_margin="10dp"
         android:background="@drawable/biankuang"
         android:hint="请输入token"
-        android:padding="8dp"
         android:inputType="textVisiblePassword"
+        android:padding="8dp"
         android:textColor="@color/sobot_common_gray1"
         android:textSize="16sp" />
 
@@ -105,5 +106,6 @@
         android:text="启动工单sdk"
         android:textColor="@color/sobot_wo_blue_color"
         android:textSize="18sp" />
+
 
 </LinearLayout>

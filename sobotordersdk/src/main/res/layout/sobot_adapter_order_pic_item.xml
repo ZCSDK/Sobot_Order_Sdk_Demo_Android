@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/sobot_wo_second_bg_color">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_work_order_pic"
+            android:layout_width="@dimen/sobot_work_order_pic_img"
+            android:layout_height="@dimen/sobot_work_order_pic_img"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sobot_icon_text_image_loading"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_work_order_pic_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:src="@drawable/sobot_icon_remove" />
+<!--    视频类型的    -->
+        <ImageView
+            android:id="@+id/iv_work_order_play"
+            android:layout_width="@dimen/album_dp_15"
+            android:layout_height="@dimen/album_dp_15"
+            android:src="@drawable/sobot_video_fullplay"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_work_order_pic_add"
+        android:layout_width="@dimen/sobot_work_order_pic_img"
+        android:layout_height="@dimen/sobot_work_order_pic_img"
+        android:background="@drawable/sobot_icon_pic_list_add"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+</LinearLayout>

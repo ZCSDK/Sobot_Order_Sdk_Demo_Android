@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sobot_wo_second_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/sobot_wo_bg_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/sobot_wo_create_info"
+        android:textColor="@color/sobot_wo_wenzi_gray1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="24dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sobot_wo_line_color" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TableRow android:layout_marginBottom="24dp">
+
+            <TextView
+                style="@style/workorder_source_item_tv_title_style"
+                android:text="@string/sobot_wo_create_channels" />
+
+            <TextView
+                android:id="@+id/sobot_tv_ticketFrom"
+                style="@style/workorder_source_item_tv_style"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="24dp">
+
+            <TextView
+                style="@style/workorder_source_item_tv_title_style"
+                android:text="@string/sobot_wo_create_creater" />
+
+            <TextView
+                android:id="@+id/sobot_tv_startName"
+                style="@style/workorder_source_item_tv_style" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="24dp">
+
+            <TextView
+                style="@style/workorder_source_item_tv_title_style"
+                android:text="@string/sobot_phone_string" />
+
+            <TextView
+                android:id="@+id/sobot_tv_tel"
+                style="@style/workorder_source_item_tv_style"
+                android:textColor="#09AEB0"
+                tools:text="13812378945" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="24dp">
+
+            <TextView
+                style="@style/workorder_source_item_tv_title_style"
+                android:text="@string/sobot_email_string" />
+
+            <TextView
+                android:id="@+id/sobot_tv_mail"
+                style="@style/workorder_source_item_tv_style"
+                tools:text="123@123.com" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

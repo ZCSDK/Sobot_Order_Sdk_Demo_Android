@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/sobot_bg_dialog_rectangle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/choice_user_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sobot_tips_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/choice_user_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sobot_avoid_repeat_order_string"
+            android:textColor="@color/sobot_wo_wenzi_gray1"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/sobot_wo_line_color" />
+
+    <LinearLayout
+        android:id="@+id/choice_user_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/choice_user_btn_right"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/sobot_cancle_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_theme_color"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/choice_user_v_line"
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="@color/sobot_wo_line_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/choice_user_btn_left"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/sobot_ok_string"
+            android:textAllCaps="false"
+            android:textColor="@color/sobot_wo_theme_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
